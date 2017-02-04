@@ -176,7 +176,7 @@ int getop(char s[]){
 
 #define BUFSIZE 100
 
-char buf[BUFSIZE];  /* buffer for ungetch */
+int buf[BUFSIZE];  /* buffer for ungetch */
 int bufp = 0;       /* next gree position in buf */
 
 int getch(void) /* get a (possibly pushed-back) character */
