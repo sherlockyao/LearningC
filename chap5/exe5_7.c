@@ -16,8 +16,7 @@ int readlines(char *lineptr[], int maxlines, char *lines)
             line[len - 1] = '\0';
             strcpy(p, line);
             lineptr[nlines++] = p;
-            while (*p++ != '\0') {
-            }
+            p += len;
         }
     }
     return nlines;
